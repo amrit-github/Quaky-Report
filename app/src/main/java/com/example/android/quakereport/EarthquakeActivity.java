@@ -43,14 +43,5 @@ public class EarthquakeActivity extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
         mRecyclerView.addItemDecoration(new DividerItemDecoration(mRecyclerView.getContext(), DividerItemDecoration.VERTICAL));
-        mSwipeRefreshLayout = findViewById(R.id.swipeRefreshLayout);
-       /* mSwipeRefreshLayout.setColorSchemeColors(getResources().getColor(R.color.colorAccent));
-        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                new FetchData(mRecyclerView).execute();
-            }
-        });
-        new FetchData(mRecyclerView).execute();*/
     }
 }
